@@ -1,0 +1,39 @@
+modLoader="javafml"
+loaderVersion="[0,)"
+license="WTFPL"
+issueTrackerURL="https://github.com/Tonk2Fried/create-redstone-fix/issues"
+
+[[mods]]
+    modId="dumbdecisionfixer"
+    version="1.0"
+    displayName="Create: Redstone Fix"
+    logoFile="logo.png"
+    authors="Tonk"
+    displayURL="https://github.com/Tonk2Fried/create-redstone-fix"
+    description='''
+    Makes encased shafts and chain drives transmit redstone again, like encased cogs do (Create issue #6365).
+    '''
+
+[[mixins]]
+    config="redstonefix.mixins.json"
+
+[[dependencies."dumbdecisionfixer"]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.1.125,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies."dumbdecisionfixer"]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21.1]"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies."dumbdecisionfixer"]]
+    modId="create"
+    type="required"
+    versionRange="[6.0.0,)"
+    ordering="AFTER"
+    side="BOTH"

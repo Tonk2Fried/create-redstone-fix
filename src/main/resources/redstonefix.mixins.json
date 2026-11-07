@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.tonk.dumbdecisionfixer.mixins",
+  "plugin": "com.tonk.dumbdecisionfixer.redstonefix.mixin.RedstoneFixMixinPlugin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "AbstractEncasedShaftBlockMixin",
+    "ChainDriveBlockMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
